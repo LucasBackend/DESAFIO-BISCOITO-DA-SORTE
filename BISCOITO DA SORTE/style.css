@@ -1,0 +1,165 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+}
+
+.hide{
+  display: none;
+
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+  display: grid;
+  place-items: center;
+  font-family: 'Montserrat',sans-serif;
+  color:#34355B;
+
+}
+
+
+main {
+  width: 50.8rem;
+  height: 56.4rem;
+  text-align: center;
+  margin:auto;
+  
+}
+
+.screen1 {
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  background-color: white;
+  width: 42.8rem;
+  height: 42.4rem;
+  margin: auto;
+  padding-top: 4.8rem;
+  text-align: center;
+  
+
+}
+
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1.7rem;
+  
+}
+
+
+.screen1 p {
+  font-family: 'DM Sans';
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  
+}
+
+.screen1 img {
+  cursor: pointer;
+}
+
+.screen1 img:hover{
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+
+}
+
+
+.caixa{
+  margin: auto;
+  width: 30rem;
+  height: 46.8rem;
+  padding-top: 4.8rem;
+
+}
+
+.screen2{
+  background-color: white;
+  width: 42.8rem;
+  height: 56.4rem;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  margin: auto;
+  text-align: center;
+}
+
+.mensagem {
+  width: 95%;
+  height: 10.7rem;
+  margin: auto;
+  margin-bottom: 6rem;
+  background-color: #E4EDF1;
+  font-size: 2.4rem;
+  font-family: 'Dancing Script',sans-serif;
+  font-weight: 400;
+  color:#000000;
+  box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+  display: flex;
+  align-items: center;
+  animation: frase 2s;
+  justify-content: center;
+
+}
+
+.frase {
+  height: 8.7rem;
+  
+}
+
+button {
+  margin-top: 6rem;
+  background: #FF9500;
+  border-color: #FF9500;
+  font-family: 'DM Sans';
+  font-weight: 700;
+  color:white;
+  border-radius: 4px;
+  width: 17.4rem;
+  height: 5.2rem;
+  padding: 1.6rem;
+  cursor: pointer;
+  
+}
+
+.efeitoFrase {
+  animation: frase 0.5s;
+
+}
+
+.gradiente {
+  background: linear-gradient(45deg, #03e4f0 0%, #054266 100%);
+
+
+}
+
+
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg);}
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes frase {
+  0%{transform:translateY(150px) scale(0.1)}
+  100%{transform:translateY(0px) scale(1)}
+
+
+}
